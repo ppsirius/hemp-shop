@@ -1,0 +1,54 @@
+/* Detect media in javascript */
+.viewports {
+	font-family: mobile;
+	@include breakpoint(small) {
+		font-family: tablet;
+	}
+	@include breakpoint(large) {
+		font-family: desktop;
+	}
+}
+
+/* Align text */
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-center {
+	text-align: center;
+}
+
+/* Show and hide element */
+.hide-desktop {
+	@include breakpoint(large) {
+		display: none;
+	}
+}
+
+.hide-mobile-tablet {
+	display: none;
+
+	@include breakpoint(large) {
+		display: block;
+
+		&.flex {
+			display: flex;
+		}
+	}
+}
+
+.hide-mobile {
+	display: none;
+
+	@include breakpoint(small) {
+		display: block;
+
+		&.flex {
+			display: flex;
+		}
+	}
+}
