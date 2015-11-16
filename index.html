@@ -13,12 +13,10 @@
     <meta name="description" content="SEO_DESC">
     <meta name="keywords" content="SEO_KEY">
 
-    <!-- @todo Prefetch -->
     <!-- http://www.htmlgoodies.com/beyond/webmaster/how-your-browser-speeds-up-cross-domain-loading-using-dns-prefetching.html -->
     <!-- http://davidwalsh.name/dns-prefetching -->
     <link rel="prefetch" href="#">
 
-    <!-- @todo Apple Customization -->
     <!-- https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html -->
     <!-- https://developer.apple.com/library/mac/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
     <!-- http://blog.teamtreehouse.com/optimizing-mobile-web-apps-ios -->
@@ -44,27 +42,162 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <!-- @todo Icons -->
     <!-- http://realfavicongenerator.net/ -->
     <link rel="apple-touch-icon-precomposed" href="#" sizes="144x144" type="image/png">
     <link rel="shortcut icon" href="#">
 
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
+	<!-- Header -->
+	<header class="hide-mobile-tablet">
+		<div class="container">
+			<div class="logo">
+				Logo
+			</div>
+		    <nav class="desktop-menu">
+				<ul class="desktop-menu-list">
+					<li class="desktop-menu-element">
+						<a href="#" class="menu-element-link">O Nas</a>
+					</li>
+					<li class="desktop-menu-element">
+						<a href="#" class="menu-element-link">O Konopiach</a>
+					</li>
+					<li class="desktop-menu-element">
+						<a href="#" class="menu-element-link">Kontraktacja</a>
+					</li>
+					<li class="desktop-menu-element">
+						<a href="#" class="menu-element-link">Produkty</a>
+					</li>
+					<li class="desktop-menu-element">
+						<a href="#" class="menu-element-link">Kontakt</a>
+					</li>
+				</ul>
+		    </nav>
+			<div class="login">
+				<a href="#" class="login-link">Zaloguj się</a>
+			</div>
+		</div>
+	</header>
+	<!-- Hero -->
+	<div class="hero hide-mobile-tablet"></div>
+	<!-- Mobile nav, Breadcrumb, Cart  -->
+	<div class="main-nav">
+		<div class="container">
+			<div class="breadcrumbs">
+				<ol class="breadcrumbs-list">
+					<li class="breadcrumbs-element">
+						<a href="#" class="breadcrumbs-link">Strona główna</a>
+					</li>
+					<li class="breadcrumbs-element">
+						<a href="#" class="breadcrumbs-link">Produkty</a>
+					</li>
+					<li class="breadcrumbs-element">
+						<a href="#" class="breadcrumbs-link">Oleje</a>
+					</li>
+				</ol>
+			</div>
+			<div class="cart">
+				<div class="cart-icon">
 
-    <nav>
+				</div>
+				<div class="cart-info">
+					<span class="cart-sum">
+						13.39zł
+					</span>
+					<span class="cart-quantity">(2)</span>
+				</div>
+			</div>
+			<nav class="mobile-menu hide-desktop">
+				<ul class="mobile-menu-list hide">
+					<li class="mobile-menu-element">
+						<a href="#" class="menu-element-link">O Nas</a>
+					</li>
+					<li class="mobile-menu-element">
+						<a href="#" class="menu-element-link">O Konopiach</a>
+					</li>
+					<li class="mobile-menu-element">
+						<a href="#" class="menu-element-link">Kontraktacja</a>
+					</li>
+					<li class="mobile-menu-element">
+						<a href="#" class="menu-element-link">Produkty</a>
+					</li>
+					<li class="mobile-menu-element">
+						<a href="#" class="menu-element-link">Kontakt</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- Content -->
+    <div class="content">
+	    <div class="container">
+	        <div class="products-content">
+		        <div class="filter-siedebar">
+			        <div class="categories">
+				        <span class="filter-title">Kategorie</span>
+				        <ul class="filter-list">
+					        <li class="filter-element">
+						        <a href="#" class="filter-link">Konopie</a>
+					        </li>
+					        <li class="filter-element active">
+						        <a href="#" class="filter-link">Oleje</a>
+					        </li>
+					        <li class="filter-element">
+						        <a href="#" class="filter-link">Czekolady</a>
+					        </li>
+					        <li class="filter-element">
+						        <a href="#" class="filter-link">Herbaty</a>
+					        </li>
+					        <li class="filter-element">
+						        <a href="#" class="filter-link">Inne</a>
+					        </li>
+				        </ul>
+			        </div>
+			        <div class="sort-by">
+				        <span class="filter-title">Kategorie</span>
+				        <ul class="filter-list">
+					        <li class="filter-element">
+						        <a href="#" class="filter-link">Konopie</a>
+					        </li>
+					        <li class="filter-element active">
+						        <a href="#" class="filter-link">Oleje</a>
+					        </li>
+					        <li class="filter-element">
+						        <a href="#" class="filter-link">Czekolady</a>
+					        </li>
+					        <li class="filter-element">
+						        <a href="#" class="filter-link">Herbaty</a>
+					        </li>
+					        <li class="filter-element">
+						        <a href="#" class="filter-link">Inne</a>
+					        </li>
+				        </ul>
+			        </div>
+		        </div>
+		        <div class="products">
+			        <ul class="products-list">
+				        <li class="product-container">
+					        <a href="#" class="product-image">
+						        <img src="#" alt="">
+					        </a>
+					        <h2 class="product-name">
+						        Czekolada mleczna
+						        z płatkami róży – 15g
+					        </h2>
+					        <span class="product-price">12.49</span>
+							<div class="buttons-container">
+								<a href="#" class="btn more">Więcej</a>
+								<a href="#" class="btn more">Dodaj do koszyka</a>
+							</div>
+				        </li>
+			        </ul>
+		        </div>
+	        </div>
 
-    </nav>
-    <header>
-
-    </header>
-
-    <div class="container">
-
+	    </div>
     </div>
 
     <footer>
@@ -76,6 +209,21 @@
     <!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/main.js"></script>
+
+
+	<script type="text/javascript">
+		WebFontConfig = {
+			google: { families: [ 'Work+Sans:700,400:latin' ] }
+		};
+		(function() {
+			var wf = document.createElement('script');
+			wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+					'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+		})(); </script>
 
     <!-- @todo Browser Happy Message -->
 

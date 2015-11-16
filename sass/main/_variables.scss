@@ -1,14 +1,21 @@
 /* Define Your Font Stack & Sizes */
-$font-stack: 'Arial', sans-serif;
+$font-stack: 'Work Sans', 'Arial', sans-serif;
 $base-font: 16;
 $base-font-size: ($base-font * 1px) !default;
 $base-line-height: 1.4;
 
 /* Base Colors */
 $body-background: #fff;
-$primary-text: #222;
+$primary-text: #000;
+$gray: #d9d9d9;
+$gray-lite: #e6e6e6;
+$gray-dark: #999999;
+$green: #68c100;
+$green-dark: #5fa800;
+
 
 
 /* Other Variables */
 $gutter: 20px;
 $border-radius: 6px;
+
