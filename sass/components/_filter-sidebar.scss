@@ -1,0 +1,58 @@
+.filter-sidebar {
+	font-size: .875rem;
+
+	.filter-title {
+		display: block;
+		margin-bottom: 10px;
+		padding: 15px $gutter;
+		border: 1px solid $gray-lite;
+		font-weight: 700;
+	}
+
+	.filter-list {
+		display: block;
+
+		.filter-element {
+			margin: 0 $gutter;
+
+			.filter-link {
+				display: block;
+				padding: $gutter 0;
+
+				@include breakpoint(large) {
+					transition: color .2s ease-in;
+
+					&:hover {
+						color: $green;
+					}
+
+				}
+			}
+
+			&.active {
+				position: relative;
+				border-bottom: 1px solid #000;
+
+				.filter-link {
+					color: $green;
+				}
+
+				&:after {
+					display: block;
+					position: absolute;
+					content: '';
+					width: 7px;
+					height: 13px;
+					right: 0;
+					top: $gutter;
+					background-image: url(../img/arrow-black.svg);
+				}
+
+			}
+
+		}
+	}
+
+
+
+}
