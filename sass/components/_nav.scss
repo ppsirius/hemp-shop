@@ -1,0 +1,28 @@
+.main-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: $gutter * 2;
+	background-color: $green;
+	color: #fff;
+	z-index: 100;
+
+	.container {
+		display: flex;
+		height: 100%;
+		align-items: center;
+
+		.cart-wrapper {
+			height: 100%;
+
+			.cart {
+				display: flex;
+				height: 100%;
+				color: #fff;
+				align-items: center;
+			}
+		}
+	}
+}

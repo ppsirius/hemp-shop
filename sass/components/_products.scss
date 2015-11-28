@@ -1,0 +1,11 @@
+.products {
+
+	.products-list {
+
+		.product-container {
+			display: block;
+			padding: $gutter;
+			border: 1px solid $gray-lite;
+		}
+	}
+}

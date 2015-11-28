@@ -22,6 +22,15 @@
 	text-align: center;
 }
 
+/* Align flex align */
+.flex-align-right {
+	margin-left: auto;
+}
+
+.flex-align-left {
+	margin-right: auto;
+}
+
 /* Show and hide element */
 .hide-desktop {
 	@include breakpoint(large) {
