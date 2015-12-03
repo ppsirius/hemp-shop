@@ -16,9 +16,9 @@
 			width: 6px;
 			height: 13px;
 			content: '';
-			top: 16px;
+			top: 17px;
 			right: $gutter;
-			background-image: url(../img/arrow-black.svg);
+			background-image: url(../img/svg/arrow-black.svg);
 			background-repeat: no-repeat;
 			transform: rotate(90deg);
 		}
@@ -61,7 +61,7 @@
 					height: 13px;
 					right: 0;
 					top: $gutter;
-					background-image: url(../img/arrow-black.svg);
+					background-image: url(../img/svg/arrow-black.svg);
 					background-repeat: no-repeat;
 				}
 

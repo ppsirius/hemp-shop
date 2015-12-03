@@ -1,0 +1,35 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	max-width: 330px;
+	margin: $gutter auto;
+
+	.navigation-element {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		border: 1px solid $gray-lite;
+		color: $gray-dark;
+	}
+
+	.pagination-text {
+		flex: 1 1 100px;
+		max-height: 40px;
+		border-top: 1px solid $gray-lite;
+		border-bottom: 1px solid $gray-lite;
+		font-size: .825rem;
+		line-height: 40px;
+		color: $gray-dark;
+		text-align: center;
+	}
+
+	.navigation-prev {
+		margin-left: -1px;
+	}
+
+	.navigation-last {
+		margin-left: -1px;
+	}
+}

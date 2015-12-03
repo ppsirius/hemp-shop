@@ -4,8 +4,51 @@
 
 		.product-container {
 			display: block;
+			max-width: 330px;
 			padding: $gutter;
+			margin: 0 auto $gutter auto;
 			border: 1px solid $gray-lite;
+			text-align: center;
 		}
+
+		.product-image-wrapper {
+			display: block;
+			max-width: 160px;
+			margin: auto;
+
+			.product-image {
+				width: 100%;
+			}
+		}
+
+		.product-link-name {
+			display: block;
+			padding: $gutter;
+
+			.product-name {
+				font-size: .825rem;
+				font-weight: 400;
+				color: $gray-dark;
+			}
+		}
+
+		.product-price {
+			display: block;
+			position: relative;
+			padding: $gutter / 2 0;
+
+			&:before {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				content: '';
+				height: 1px;
+				width: 130px;
+				background: $gray-lite;
+				transform: translateX(-50%);
+			}
+		}
+
+
 	}
 }

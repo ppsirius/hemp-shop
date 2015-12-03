@@ -6,6 +6,7 @@ body {
 	color: $primary-text;
 	font-family: $font-stack;
 	font-size: $base-font-size;
+	line-height: $base-line-height;
 	-webkit-font-smoothing: subpixel-antialiased;
 	font-weight: 300;
 	overflow-x: hidden;
@@ -18,4 +19,8 @@ body {
 
 .content {
 	margin-top: $gutter * 2;
+
+	&.products-page {
+		margin-top: $gutter * 3;
+	}
 }
