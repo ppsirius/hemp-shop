@@ -17,15 +17,19 @@
 	.pagination-text {
 		flex: 1 1 100px;
 		max-height: 40px;
-		border-top: 1px solid $gray-lite;
-		border-bottom: 1px solid $gray-lite;
-		font-size: .825rem;
+		border: 1px solid $gray-lite;
+		font-size: .875rem;
 		line-height: 40px;
 		color: $gray-dark;
 		text-align: center;
 	}
 
 	.navigation-prev {
+		margin-left: -1px;
+		margin-right: -1px;
+	}
+
+	.navigation-next {
 		margin-left: -1px;
 	}
 

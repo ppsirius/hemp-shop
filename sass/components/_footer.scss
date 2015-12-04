@@ -1,0 +1,77 @@
+footer {
+	position: relative;
+	width: 100%;
+	margin-top: 60px;
+	padding: 10px 0;
+	background: $gray-lite-bg;
+
+	&:before {
+		display: block;
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		top: -40px;
+		right: 0;
+		background-color: $green;
+		content: "";
+		background-image: url('../img/svg/arrow-white.svg');
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	.footer-item {
+
+		&.social-icons {
+			padding: 10px 0;
+			background: none;
+
+			.social-link {
+				display: inline-block;
+				width: 20px;
+				max-width: 20px;
+				color: #999;
+				margin-right: 30px;
+				@include clickable-area(15px);
+
+				svg {
+					width: 100%;
+				}
+			}
+		}
+
+		.footer-headline {
+			position: relative;
+			padding: 15px 0;
+			color: $gray-dark;
+			font-size: .75rem;
+			font-weight: 400;
+
+			&:before {
+				display: block;
+				position: absolute;
+				width: 13px;
+				height: 7px;
+				top: 17px;
+				right: 0;
+				background-image: url(../img/svg/arrow-gray.svg);
+				background-repeat: no-repeat;
+				content: '';
+			}
+		}
+
+		.footer-item-list {
+			display: none; // @todo zrobić dropdown
+
+			.footer-item-element {
+
+				.footer-item-link {
+					display: block;
+					width: 100%;
+					padding: 10px 0;
+					font-size: .75rem;
+					color: $gray-dark;
+				}
+			}
+		}
+	}
+}

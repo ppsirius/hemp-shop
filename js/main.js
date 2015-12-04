@@ -6,4 +6,11 @@ $(function() {
     //
     //}
 
+
+    $('.hamburger').click(function(event){
+        event.preventDefault();
+        $(this).toggleClass('open');
+    });
+
+
 });

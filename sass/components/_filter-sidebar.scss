@@ -13,10 +13,10 @@
 		&:after {
 			display: block;
 			position: absolute;
-			width: 6px;
+			width: 7px;
 			height: 13px;
 			content: '';
-			top: 17px;
+			top: 19px;
 			right: $gutter;
 			background-image: url(../img/svg/arrow-black.svg);
 			background-repeat: no-repeat;
@@ -57,7 +57,7 @@
 					display: block;
 					position: absolute;
 					content: '';
-					width: 6px;
+					width: 7px;
 					height: 13px;
 					right: 0;
 					top: $gutter;
