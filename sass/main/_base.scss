@@ -15,12 +15,17 @@ body {
 
 .container {
 	margin: 0 $gutter;
+
+	@include breakpoint(small) {
+		max-width: 700px;
+		margin: auto;
+	}
+
+	@include breakpoint(large) {
+		max-width: 1240px;
+	}
 }
 
 .content {
 	margin-top: $gutter * 2;
-
-	&.products-page {
-		margin-top: $gutter * 3;
-	}
 }

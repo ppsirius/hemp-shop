@@ -17,6 +17,10 @@ footer {
 		background-image: url('../img/svg/arrow-white.svg');
 		background-repeat: no-repeat;
 		background-position: center center;
+
+		@include breakpoint(large) {
+			content: none;
+		}
 	}
 
 	.footer-item {

@@ -1,6 +1,41 @@
 .filter-sidebar {
 	font-size: .875rem;
 
+	@include breakpoint(small) {
+		display: flex;
+	}
+
+	@include breakpoint(large) {
+		flex: 1 1 auto;
+		flex-direction: column;
+	}
+
+	.categories {
+
+		@include breakpoint(small) {
+			flex: 1 1 50%;
+			margin-right: $gutter * 2;
+		}
+
+		@include breakpoint(large) {
+			flex: 1 1 100%;
+			margin: 0;
+		}
+	}
+
+	.sort-by {
+
+		@include breakpoint(small) {
+			flex: 1 1 50%;
+			margin-left: $gutter * 2;
+		}
+
+		@include breakpoint(large) {
+			flex: 1 1 100%;
+			margin: 0;
+		}
+	}
+
 	.filter-title {
 		display: block;
 		position: relative;
@@ -9,6 +44,10 @@
 		border: 1px solid $gray-lite;
 		font-weight: 700;
 		cursor: pointer;
+
+		@include breakpoint(large) {
+			border-right: none;
+		}
 
 		&:after {
 			display: block;

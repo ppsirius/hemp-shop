@@ -9,10 +9,34 @@
 	color: #fff;
 	z-index: 100;
 
+	@include breakpoint(large) {
+		position: relative;
+		background-color: $gray-lite;
+	}
+
 	.container {
 		display: flex;
 		height: 100%;
 		align-items: center;
+
+		.breadcrumbs {
+
+			.breadcrumbs-list {
+
+				.breadcrumbs-element {
+					display: inline-block;
+
+					.breadcrumbs-link {
+						font-size: .875rem;
+						color: $primary-text;
+					}
+
+				}
+
+			}
+
+
+		}
 
 		.cart-wrapper {
 			display: flex;
