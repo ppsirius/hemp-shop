@@ -7,6 +7,12 @@
 	border: 1px solid $green;
 	font-size: .875rem;
 	color: $green;
+	transition: background .2s ease-in, color .2s ease-in;
+
+	&:hover {
+		background-color: $green;
+		color: #fff;
+	}
 
 	&.with-icon {
 		position: relative;

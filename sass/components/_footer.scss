@@ -23,6 +23,13 @@ footer {
 		}
 	}
 
+	.container {
+		@include breakpoint(large) {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
 	.footer-item {
 
 		&.social-icons {
@@ -50,6 +57,10 @@ footer {
 			font-size: .75rem;
 			font-weight: 400;
 
+			@include breakpoint(large) {
+				text-transform: uppercase;
+			}
+
 			&:before {
 				display: block;
 				position: absolute;
@@ -60,11 +71,20 @@ footer {
 				background-image: url(../img/svg/arrow-gray.svg);
 				background-repeat: no-repeat;
 				content: '';
+
+				@include breakpoint(large) {
+					content: none;
+				}
 			}
 		}
 
 		.footer-item-list {
 			display: none; // @todo zrobić dropdown
+
+			@include breakpoint(large) {
+				display: block;
+				padding-left: 10px;
+			}
 
 			.footer-item-element {
 

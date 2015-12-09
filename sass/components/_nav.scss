@@ -26,16 +26,26 @@
 				.breadcrumbs-element {
 					display: inline-block;
 
+					&:after {
+						display: inline-block;
+						content: '/';
+						color: $primary-text;
+					}
+
+					&:last-child {
+						font-weight: 700;
+
+						&:after {
+							content: none;
+						}
+					}
+
 					.breadcrumbs-link {
 						font-size: .875rem;
 						color: $primary-text;
 					}
-
 				}
-
 			}
-
-
 		}
 
 		.cart-wrapper {
@@ -49,8 +59,22 @@
 				color: #fff;
 				align-items: center;
 
+				@include breakpoint(large) {
+					background-color: $gray;
+					padding-right: $gutter;
+					color: $primary-text;
+				}
+
 				.cart-icon {
 					margin: 0 20px;
+
+					@include breakpoint(large) {
+						display: flex;
+						height: 100%;
+						margin-left: 0;
+						padding: 0 $gutter / 2;
+						background-color: $green;
+					}
 				}
 
 				.cart-info {
@@ -60,7 +84,6 @@
 			}
 
 			.hamburger {
-				display: block;
 				position: relative;
 				width: 20px;
 				height: 20px;
