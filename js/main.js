@@ -8,8 +8,11 @@ $(function() {
 
 
     $('.hamburger').click(function(event){
-        event.preventDefault();
-        $(this).toggleClass('open');
+        $('.mobile-menu').addClass('open');
+    });
+
+    $('.close-menu').click(function(event){
+        $('.mobile-menu').removeClass('open');
     });
 
 
