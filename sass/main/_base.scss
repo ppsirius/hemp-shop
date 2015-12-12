@@ -9,8 +9,8 @@ body {
 	line-height: $base-line-height;
 	-webkit-font-smoothing: subpixel-antialiased;
 	font-weight: 300;
-	overflow-x: hidden;
-	overflow-y: visible;
+	overflow: hidden;
+
 }
 
 .container {
