@@ -50,6 +50,10 @@
 			border-right: none;
 		}
 
+		&:active {
+			background-color: $gray-lite; // @todo na androidzie niebieski active
+		}
+
 		&:after {
 			display: block;
 			position: absolute;
@@ -64,51 +68,58 @@
 		}
 	}
 
-	.filter-list {
+	.filter-list-wrapper {
 		display: block;
+		overflow: hidden;
+		max-height: 0;
 
-		.filter-element {
-			margin: 0 $gutter;
+		@include breakpoint(large) {
+			max-height: none;
+		}
 
-			.filter-link {
-				display: block;
-				padding: $gutter 0;
-				color: #000;
+		.filter-list {
 
-				@include breakpoint(large) {
-					transition: color .2s ease-in;
+			.filter-element {
+				margin: 0 $gutter;
 
-					&:hover {
+				.filter-link {
+					display: block;
+					padding: $gutter 0;
+					color: #000;
+
+					@include breakpoint(large) {
+						transition: color .2s ease-in;
+
+						&:hover {
+							color: $green;
+						}
+					}
+				}
+
+				&.active {
+					position: relative;
+					border-bottom: 1px solid $gray-dark;
+
+					.filter-link {
 						color: $green;
 					}
 
+					&:after {
+						display: block;
+						position: absolute;
+						content: '';
+						width: 7px;
+						height: 13px;
+						right: 0;
+						top: $gutter;
+						background-image: url(../img/svg/arrow-black.svg);
+						background-repeat: no-repeat;
+					}
 				}
 			}
-
-			&.active {
-				position: relative;
-				border-bottom: 1px solid $gray-dark;
-
-				.filter-link {
-					color: $green;
-				}
-
-				&:after {
-					display: block;
-					position: absolute;
-					content: '';
-					width: 7px;
-					height: 13px;
-					right: 0;
-					top: $gutter;
-					background-image: url(../img/svg/arrow-black.svg);
-					background-repeat: no-repeat;
-				}
-
-			}
-
 		}
 	}
+
 
 
 

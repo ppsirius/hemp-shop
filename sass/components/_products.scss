@@ -6,7 +6,7 @@
 }
 
 .products {
-	margin-top: $gutter * 2;
+	margin-top: 10px;
 
 	@include breakpoint(large) {
 		flex: 0 1 930px;

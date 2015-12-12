@@ -9,8 +9,12 @@ body {
 	line-height: $base-line-height;
 	-webkit-font-smoothing: subpixel-antialiased;
 	font-weight: 300;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: visible;
+}
 
+*{
+	-webkit-user-select: none;
 }
 
 .container {
@@ -27,5 +31,9 @@ body {
 }
 
 .content {
-	margin-top: $gutter * 2;
+	margin-top: 70px;
+
+	@include breakpoint(large) {
+		margin-top: $gutter * 2;
+	}
 }

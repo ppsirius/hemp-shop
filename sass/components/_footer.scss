@@ -78,24 +78,35 @@ footer {
 			}
 		}
 
-		.footer-item-list {
-			display: none; // @todo zrobić dropdown
+		.footer-list-wrapper {
+			display: block;
+			overflow: hidden;
+			max-height: 0;
 
 			@include breakpoint(large) {
-				display: block;
-				padding-left: 10px;
+				max-height: none;
 			}
 
-			.footer-item-element {
+			.footer-item-list {
 
-				.footer-item-link {
+				@include breakpoint(large) {
 					display: block;
-					width: 100%;
-					padding: 10px 0;
-					font-size: .75rem;
-					color: $gray-dark;
+					padding-left: 10px;
+				}
+
+				.footer-item-element {
+
+					.footer-item-link {
+						display: block;
+						width: 100%;
+						padding: 10px 0 10px 10px;
+						font-size: .75rem;
+						color: $gray-dark;
+					}
 				}
 			}
 		}
+
+
 	}
 }
