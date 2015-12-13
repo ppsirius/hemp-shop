@@ -36,4 +36,59 @@
 		color: #fff;
 	}
 
+	&.disabled {
+		background-color: $gray-dark;
+		color: #fff;
+		border-color: $gray-dark;
+		cursor: not-allowed;
+
+		&:before, &:after {
+			position: absolute;
+			display: block;
+			transform: translateY(-10px);
+			opacity: 0;
+			transition: all .2s ease-in;
+		}
+
+		&:after {
+			width: 170px;
+			padding: 8px;
+			top: -39px;
+			right: -1px;
+			content: 'Produkt chwilowo niedostępny';
+			font-size: .625rem;
+			color: #fff;
+			white-space: nowrap;
+			background-color: #808080;
+		}
+
+		&:before {
+			position: absolute;
+			display: block;
+			top: -10px;
+			right: 13px;
+			content: '';
+			width: 0;
+			height: 0;
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			border-top: 8px solid #808080;
+		}
+
+		&.active-tooltip {
+
+			&:before, &:after {
+				transform: translateY(0);
+				opacity: 1;
+			}
+
+		}
+
+		.btn-icon {
+			background-color: #808080;
+		}
+	}
 }
+
+
+

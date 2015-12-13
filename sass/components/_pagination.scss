@@ -4,6 +4,11 @@
 	max-width: 330px;
 	margin: $gutter auto;
 
+	@include breakpoint(large) {
+		max-width: 310px;
+		margin: $gutter * 2 auto;
+	}
+
 	.navigation-element {
 		display: flex;
 		justify-content: center;
@@ -12,6 +17,16 @@
 		height: 40px;
 		border: 1px solid $gray-lite;
 		color: $gray-dark;
+
+		@include breakpoint(large) {
+			transition: all .2s ease-in;
+
+			&:hover {
+				border-color: $green-dark;
+				color: $green-dark;
+				z-index: 2; // @todo zrobić hover bordera na afterze
+			}
+		}
 	}
 
 	.pagination-text {

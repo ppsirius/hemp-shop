@@ -23,6 +23,10 @@ footer {
 		}
 	}
 
+	@include breakpoint(large) {
+		margin-top: 0;
+	}
+
 	.container {
 		@include breakpoint(large) {
 			display: flex;
@@ -91,15 +95,32 @@ footer {
 
 				@include breakpoint(large) {
 					display: block;
-					padding-left: 10px;
 				}
 
 				.footer-item-element {
+					padding-left: 10px;
 
 					.footer-item-link {
 						display: block;
 						width: 100%;
-						padding: 10px 0 10px 10px;
+						padding: 10px 0;
+						font-size: .75rem;
+						color: $gray-dark;
+						transition: color .2s ease-in;
+
+						&.green-text {
+							color: $green;
+						}
+
+						@include breakpoint(large) {
+
+							&:hover {
+								color: $green;
+							}
+						}
+					}
+
+					.footer-text {
 						font-size: .75rem;
 						color: $gray-dark;
 					}
@@ -107,6 +128,20 @@ footer {
 			}
 		}
 
+		.social-wrapper {
+			margin-top: $gutter;
+
+			.social-link {
+				transition: color .2s ease-in;
+
+				@include breakpoint(large) {
+
+					&:hover {
+						color: $green;
+					}
+				}
+			}
+		}
 
 	}
 }

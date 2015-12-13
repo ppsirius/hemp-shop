@@ -40,5 +40,11 @@ $(function() {
     });
 
 
+    // Disable product tooltip
+    $('.disabled').click(function(event){
+        event.preventDefault();
+        $(this).toggleClass('active-tooltip');
+    });
+
 
 });
