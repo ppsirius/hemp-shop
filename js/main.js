@@ -39,12 +39,16 @@ $(function() {
         }
     });
 
-
-    // Disable product tooltip
+    // Enable product tooltip
     $('.disabled').click(function(event){
         event.preventDefault();
         $(this).toggleClass('active-tooltip');
     });
+
+    // Scroll to top
+    $('.scroll-top').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+    })
 
 
 });
