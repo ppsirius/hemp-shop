@@ -10,7 +10,7 @@ footer {
 		width: 40px;
 		height: 40px;
 		top: -40px;
-		right: 0;
+		right: $gutter;
 		background-color: $green;
 		content: "";
 		background-image: url('../img/svg/arrow-white.svg');

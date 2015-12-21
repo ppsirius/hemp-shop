@@ -124,7 +124,7 @@
 				left: 0;
 				background-color: $green;
 				transition: transform .2s ease-in;
-				transform: translateX(100%); // przesuniecie
+				transform: translateX(100%);
 
 				&.open {
 					transform: translateX(0);
@@ -142,7 +142,6 @@
 						@include clickable-area(20px)
 					}
 				}
-
 
 				.mobile-menu-list {
 					flex: 1 1 70%;
@@ -166,7 +165,6 @@
 						}
 					}
 				}
-
 
 				.mobile-login-wrapper {
 					display: flex;

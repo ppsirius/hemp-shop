@@ -17,6 +17,10 @@
 @import "components/nav";
 @import "components/buttons";
 @import "components/filter-sidebar";
-@import "components/products";
 @import "components/pagination";
 @import "components/hero";
+
+/* Pages */
+@import "pages/products";
+@import "pages/product";
+
