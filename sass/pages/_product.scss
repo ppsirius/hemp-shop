@@ -96,13 +96,36 @@
 					margin: $gutter 0;
 					max-width: 240px;
 				}
-
-
 			}
 
 
 
+
 		}
+
+	}
+
+	.product-description {
+
+		.product-description-list {
+			display: block;
+			margin-top: $gutter * 2;
+			color: $gray-dark;
+
+			.product-description-element {
+				margin-bottom: $gutter;
+
+				.description-title {
+					display: block;
+					font-weight: 700;
+				}
+
+				.description-info {
+					display: block;
+				}
+			}
+		}
+
 	}
 
 }
