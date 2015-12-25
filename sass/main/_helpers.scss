@@ -34,12 +34,12 @@
 /* Show and hide element */
 .hide-desktop {
 	@include breakpoint(large) {
-		display: none;
+		display: none !important;
 	}
 }
 
 .hide-mobile-tablet {
-	display: none;
+	display: none !important;
 
 	@include breakpoint(large) {
 		display: block;
@@ -51,7 +51,7 @@
 }
 
 .hide-mobile {
-	display: none;
+	display: none !important;
 
 	@include breakpoint(small) {
 		display: block;

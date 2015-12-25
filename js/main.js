@@ -50,5 +50,22 @@ $(function() {
         $("html, body").animate({ scrollTop: 0 }, "slow");
     })
 
+    // Increment and decrement quantity
+    var quantityInput = $('.quantity-input'),
+        oldValue;
+
+    $('.quantity-up').click(function(){
+        oldValue = quantityInput.val();
+        quantityInput.val(++oldValue);
+    });
+
+    $('.quantity-down').click(function(){
+        oldValue = quantityInput.val();
+        if(oldValue != 1) {
+            quantityInput.val(--oldValue);
+        }
+    });
+
+
 
 });

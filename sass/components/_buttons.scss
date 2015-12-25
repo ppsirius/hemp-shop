@@ -7,6 +7,7 @@
 	border: 1px solid $green;
 	font-size: .875rem;
 	color: $green;
+	text-align: center;
 	transition: background .2s ease-in, color .2s ease-in;
 
 	&:hover {
@@ -91,4 +92,77 @@
 }
 
 
+.quantity-wrapper {
+	display: flex;
+	margin: $gutter 0;
 
+	.quantity-form {
+		width: 44px;
+		height: 44px;
+		border: 1px solid $gray;
+		text-align: center;
+		color: $gray-dark;
+
+		.quantity-input {
+			display: block;
+			width: 100%;
+			line-height: 44px;
+			text-align: center;
+		}
+
+		input[type=number]::-webkit-inner-spin-button,
+		input[type=number]::-webkit-outer-spin-button {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			margin: 0;
+		}
+
+		input[type=number] {
+			-moz-appearance:textfield;
+		}
+	}
+
+	.quantity-action {
+		width: 44px;
+		height: 44px;
+		margin-left: -1px;
+		border: 1px solid #c9c9c9;
+		background-color: $gray-lite;
+
+		.quantity-up, .quantity-down {
+			height: 22px;
+			background-repeat: no-repeat;
+			background-position: center center;
+
+			&:active {
+				background-color: darken($gray-lite, 5%);
+			}
+		}
+
+		.quantity-up {
+			background-image: url(../img/svg/add.svg);
+		}
+
+		.quantity-down {
+			background-image: url(../img/svg/minus.svg);
+			background-size: 14px 14px;
+		}
+	}
+}
+
+.continue-shopping {
+	display: flex;
+
+	.continue-shopping-arrow {
+		width: 9px;
+		height: 25px;
+		margin-right: 10px;
+	}
+
+	.continue-shopping {
+		font-size: 1.125rem;
+		color: $green;
+	}
+
+}
