@@ -130,6 +130,10 @@
 		border: 1px solid #c9c9c9;
 		background-color: $gray-lite;
 
+		@include breakpoint(large) {
+			cursor: pointer;
+		}
+
 		.quantity-up, .quantity-down {
 			height: 22px;
 			background-repeat: no-repeat;
@@ -152,15 +156,13 @@
 }
 
 .continue-shopping {
-	display: flex;
 
 	.continue-shopping-arrow {
 		width: 9px;
-		height: 25px;
 		margin-right: 10px;
 	}
 
-	.continue-shopping {
+	.continue-shopping-text {
 		font-size: 1.125rem;
 		color: $green;
 	}

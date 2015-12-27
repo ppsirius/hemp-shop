@@ -42,10 +42,10 @@
 	display: none !important;
 
 	@include breakpoint(large) {
-		display: block;
+		display: block !important;
 
 		&.flex {
-			display: flex;
+			display: flex !important;
 		}
 	}
 }
@@ -54,10 +54,10 @@
 	display: none !important;
 
 	@include breakpoint(small) {
-		display: block;
+		display: block !important;
 
 		&.flex {
-			display: flex;
+			display: flex !important;
 		}
 	}
 }
@@ -77,7 +77,15 @@
 	background-color: $green;;
 	color: #fff;
 	text-transform: uppercase;
+	font-weight: 700;
+
+	@include breakpoint(large) {
+		display: inline-block;
+		max-width: none;
+		padding: 12px 25px;
+	}
 }
+
 
 
 

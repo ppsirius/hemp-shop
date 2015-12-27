@@ -61,7 +61,7 @@ $(function() {
 
     $('.quantity-down').click(function(){
         oldValue = quantityInput.val();
-        if(oldValue != 1) {
+        if(oldValue > 1) {
             quantityInput.val(--oldValue);
         }
     });

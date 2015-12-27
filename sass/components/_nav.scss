@@ -19,6 +19,21 @@
 		height: 100%;
 		align-items: center;
 
+		.main-nav-logo {
+
+			.logo {
+				display: block;
+				width: 65px;
+				height: 33px;
+				color: #fff;
+
+				.logo-svg {
+					width: 100%;
+				}
+			}
+
+		}
+
 		.breadcrumbs {
 
 			.breadcrumbs-list {

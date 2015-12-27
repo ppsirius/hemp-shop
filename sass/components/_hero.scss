@@ -15,6 +15,13 @@
 
 			.logo {
 				flex: 0 1 auto;
+				color: #fff;
+
+				.logo-svg {
+					width: 100%;
+					max-width: 100px;
+					color: #fff;
+				}
 			}
 
 			.desktop-menu {

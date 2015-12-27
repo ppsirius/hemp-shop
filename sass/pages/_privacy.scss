@@ -1,0 +1,54 @@
+.privacy {
+	margin-bottom: $gutter * 3;
+	color: $gray-dark;
+
+	.privacy-category-list {
+		margin-top: $gutter;
+		counter-reset: category-paragraph;
+
+		.privacy-category {
+			counter-increment: category-paragraph;
+			margin-bottom: $gutter;
+
+			@include breakpoint(large) {
+				margin-bottom: $gutter * 3;
+			}
+
+
+			.privacy-category-counter, .category-tittle {
+				display: block;
+				font-weight: 700;
+				text-align: center;
+			}
+
+			.privacy-category-counter {
+
+				&:after {
+					content: ' ' counter(category-paragraph);
+				}
+			}
+
+			.category-list {
+				margin-top: $gutter;
+				counter-reset: category-element;
+
+				.category-element {
+					counter-increment: category-element;
+					margin-bottom: 10px;
+
+					.element-content {
+
+						&:before {
+							content: counter(category-element) '. ';
+						}
+					}
+
+				}
+
+			}
+
+
+		}
+
+	}
+}
