@@ -3,8 +3,8 @@
 	color: $gray-dark;
 
 	.privacy-category-list {
-		margin-top: $gutter;
 		counter-reset: category-paragraph;
+		margin-top: $gutter;
 
 		.privacy-category {
 			counter-increment: category-paragraph;
@@ -13,7 +13,6 @@
 			@include breakpoint(large) {
 				margin-bottom: $gutter * 3;
 			}
-
 
 			.privacy-category-counter, .category-tittle {
 				display: block;
@@ -42,13 +41,8 @@
 							content: counter(category-element) '. ';
 						}
 					}
-
 				}
-
 			}
-
-
 		}
-
 	}
 }
