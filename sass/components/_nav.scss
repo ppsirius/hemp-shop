@@ -35,30 +35,26 @@
 		}
 
 		.breadcrumbs {
+			color: #000;
 
 			.breadcrumbs-list {
+				font-size: .875rem;
 
 				.breadcrumbs-element {
 					display: inline-block;
 
-					&:after {
-						display: inline-block;
-						content: '/';
-						color: $primary-text;
-					}
-
-					&:last-child {
-						font-weight: 700;
-
-						&:after {
-							content: none;
-						}
-					}
+					//&:last-child {
+					//	font-weight: 700;
+					//} @todo ostylować last child
 
 					.breadcrumbs-link {
 						font-size: .875rem;
 						color: $primary-text;
 					}
+				}
+
+				a {
+					color: $primary-text;
 				}
 			}
 		}

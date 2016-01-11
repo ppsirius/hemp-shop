@@ -165,25 +165,36 @@
 		<!-- Content -->
 		<div class="content login-page">
 			<div class="container">
-				<div class="login-tabs">
-					<div class="login-tab">
-						Mam już konto
+				<div class="login-wrapper">
+					<div class="login-tabs">
+						<div class="login-tab">
+							Mam już konto
+						</div>
+						<div class="login-tab">
+							Utwórz konto
+						</div>
+						<div class="active-bg"></div>
 					</div>
-					<div class="login-tab">
-						Utwórz konto
-					</div>
-					<div class="active-bg"></div>
 					<div class="login-wrapper">
 						<span class="text-title">
 							Zaloguj się używając swojego adresu e-mail
 						</span>
-						<input class="input" type="email" placeholder="Adres e-mail">
-						<input class="input" type="password" placeholder="Hasło">
-						<span class="errors">
-							jakieś błędy
-						</span>
+						<input class="input" type="email" placeholder="Adres e-mail" required>
+						<input class="input" type="password" placeholder="Hasło" required>
+
 						<a href="#" class="forgot-password">Nie pamiętasz hasła?</a>
 						<button type="submit" href="#" class="btn with-icon inverted">Zaloguj<span class="btn-icon"><img class="icon-svg" src="img/svg/arrow-white-right.svg"></span></button>
+
+						<div class="errors">
+							jakieś błędy
+						</div>
+					</div>
+
+					<div class="login-wrapper">
+						<span class="text-title">
+							Podaj swój adres e-mail aby utworzyć konto
+						</span>
+						<input class="input" type="email" placeholder="Adres e-mail" required>
 
 						<div class="checkbox-wrapper">
 							<div class="checkbox-svg-wrapper">
@@ -200,8 +211,17 @@
 								się na górze strony.</span>
 							</label>
 						</div>
+						<button type="submit" href="#" class="btn with-icon inverted">Załóż konto<span class="btn-icon"><img class="icon-svg" src="img/svg/arrow-white-right.svg"></span></button>
+
+						<div class="errors">
+							jakieś błędy
+						</div>
+
 
 					</div>
+
+
+
 				</div>
 			</div>
 		</div>

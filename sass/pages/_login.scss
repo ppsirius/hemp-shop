@@ -1,0 +1,52 @@
+.login-wrapper {
+
+	.login-tabs {
+		display: flex;
+		flex-wrap: wrap;
+		height: $gutter * 2;
+		border: 1px solid $gray;
+
+		.login-tab {
+			flex: 1 1 50%;
+			height: 100%;
+			line-height: $gutter * 2;
+			text-align: center;
+		}
+
+		.active-bg {
+			flex: 0 1 50%;
+			height: $gutter * 2;
+			background-color: $green;
+			transform: translateY(-40px);
+			z-index: -1;
+		}
+	}
+
+	.login-wrapper {
+		text-align: center;
+		color: $gray-dark;
+
+		.text-title {
+			display: block;
+			margin: $gutter 0;
+			padding: 0 $gutter;
+			font-size: .875rem;
+		}
+
+		.errors {
+			text-align: left;
+			color: #d33718;
+			margin: 10px 0;
+		}
+
+		.forgot-password {
+			display: block;
+			text-align: left;
+			font-size: .875rem;
+			text-decoration: underline;
+			color: $gray-dark;
+			margin-bottom: 10px;
+		}
+	}
+
+}
